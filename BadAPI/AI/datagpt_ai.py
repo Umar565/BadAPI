@@ -34,7 +34,7 @@ def datagpt(self,args:str):
             json_text = extracted_json.replace('\n', ' ')
 
             data = json.loads(json_text)
-            return {"results":data["text"],"join": "@Mr_Sukkun", "success": True
+            return {"results":data["text"],"join": "@PBX_CHAT", "success": True
                     }
         except Exception as e:
             return e

@@ -31,7 +31,7 @@ def gemini(self, args: str) -> dict:
         response = requests.post(url, headers=headers, data=json.dumps(payload))
         if response.status_code == 200:
             generated_text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
-            return {"results":generated_text,"join": "@Mr_Sukkun", "success": True}
+            return {"results":generated_text,"join": "@PBX_CHAT", "success": True}
     except Exception as e:
         return e
     

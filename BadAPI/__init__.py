@@ -198,7 +198,7 @@ class BadAPI:
                         "movie_genre": movie_genre,
                         "movie_actors": movie_actors,
                         "movie_trailer": movie_trailer,
-                        "join": "@Mr_Sukkun",
+                        "join": "@PBX_CHAT",
                         "success": True,
                     })
                     return {"results": output}
@@ -229,7 +229,7 @@ class BadAPI:
         output = {
             "input": args,
             "results": cipher,
-            "join": "@Mr_Sukkun",
+            "join": "@PBX_CHAT",
             "sucess": True
         }
         return (output)
@@ -267,7 +267,7 @@ class BadAPI:
         output = {
             "input": args,
             "results": decipher,
-            "join": "@Mr_Sukkun",
+            "join": "@PBX_CHAT",
             "success": True
         }
         return output
@@ -303,7 +303,7 @@ class BadAPI:
             image_tags = soup.find_all('img')
             image_urls = [img['src'] for img in image_tags if img['src'].startswith('https://media.istockphoto.com')]
             
-            return {"results": image_urls, "join": "@Mr_Sukkun", "success": True}
+            return {"results": image_urls, "join": "@PBX_CHAT", "success": True}
         else:
             return {f"status code: {response.status_code}"}
         
@@ -457,7 +457,7 @@ class BadAPI:
         for index, item in enumerate(items, 1):
             result.append((index, item))
 
-        return {"results": result, "join": "@Mr_Sukkun", "sucess": True}
+        return {"results": result, "join": "@PBX_CHAT", "sucess": True}
     def github(self,args):
         """
     Search GitHub information based on the username query provided.

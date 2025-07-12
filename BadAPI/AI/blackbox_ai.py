@@ -54,6 +54,6 @@ def blackbox(self,args: str) -> requests.Response:
         try:
             response = requests.post(url, json=payload, headers=headers)
             if response.status_code == 200:
-                return {"results": response.text, "join": "@Mr_Sukkun", "success": True}
+                return {"results": response.text, "join": "@PBX_CHAT", "success": True}
         except Exception as e:
             return e
