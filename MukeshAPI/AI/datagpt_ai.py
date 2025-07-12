@@ -1,4 +1,4 @@
-from .. import MukeshAPI
+from .. import BadAPI
 import requests
 import json
 import re
@@ -38,4 +38,4 @@ def datagpt(self,args:str):
                     }
         except Exception as e:
             return e
-MukeshAPI.datagpt=datagpt
+BadAPI.datagpt=datagpt

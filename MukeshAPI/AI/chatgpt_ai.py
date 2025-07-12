@@ -1,4 +1,4 @@
-from .. import MukeshAPI
+from .. import BadAPI
 import requests
 import json,types
 import urllib
@@ -46,4 +46,4 @@ def chatgpt(self,args:str,mode:str=False):
             except Exception as e:
                 return e
         
-MukeshAPI.chatgpt=types.MethodType(chatgpt, MukeshAPI, None)
+BadAPI.chatgpt=types.MethodType(chatgpt, BadAPI, None)

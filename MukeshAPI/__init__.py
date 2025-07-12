@@ -13,7 +13,7 @@ __version__ = "0.6.2.1"
 __all__ = ["api","AI"]
 
 
-class MukeshAPI:
+class BadAPI:
     
     def __init__(self)->None:
         """Api for various purpose
@@ -529,4 +529,4 @@ class MukeshAPI:
         return results
     
 
-api=MukeshAPI()
+api=BadAPI()

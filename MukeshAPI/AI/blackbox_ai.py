@@ -1,4 +1,4 @@
-from .. import MukeshAPI
+from .. import BadAPI
 import requests
 import json
 import urllib

@@ -1,7 +1,7 @@
 from setuptools import setup,find_packages
 import re
 def version():
-    filename = "MukeshAPI/__init__.py"
+    filename = "BadAPI/__init__.py"
     with open(filename) as f:
         match = re.search(r"""^__version__ = ['"]([^'"]*)['"]""", f.read(), re.M)
     if not match:
@@ -15,7 +15,7 @@ with open("README.md", encoding="utf8") as readme:
 
 # Setting up
 setup(
-    name="MukeshAPI",
+    name="BadAPI",
     version=version(),
     author="Mukesh | noob-mukesh",
     author_email="itzcodermukesh@gmail.com",
@@ -24,10 +24,10 @@ setup(
     long_description=long_desc,
     packages=find_packages(),
     license="MIT",
-    url="https://github.com/noob-mukesh/MukeshAPI",
-    download_url="https://github.com/Noob-mukesh/MukeshAPI/blob/main/README.md",
+    url="https://github.com/noob-mukesh/BadAPI",
+    download_url="https://github.com/Noob-mukesh/BadAPI/blob/main/README.md",
     install_requires=["pytz>=2023.3","requests-html"],
-    keywords=['python', "MukeshAPI","flask"],
+    keywords=['python', "BadAPI","flask"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -53,9 +53,9 @@ setup(
     ],
     
     project_urls={
-        "Tracker": "https://github.com/noob-mukesh/MukeshAPI/issues",
+        "Tracker": "https://github.com/noob-mukesh/BadAPI/issues",
         "Community": "https://t.me/mr_sukkun",
-        "Source": "https://github.com/noob-mukesh/MukeshAPI",
+        "Source": "https://github.com/noob-mukesh/BadAPI",
     },
     python_requires="~=3.7",
 )

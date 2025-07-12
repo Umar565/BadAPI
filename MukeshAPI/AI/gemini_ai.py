@@ -1,4 +1,4 @@
-from .. import MukeshAPI
+from .. import BadAPI
 import requests
 import json
 import urllib
@@ -35,4 +35,4 @@ def gemini(self, args: str) -> dict:
     except Exception as e:
         return e
     
-MukeshAPI.gemini=gemini
+BadAPI.gemini=gemini
