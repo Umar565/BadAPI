@@ -46,4 +46,4 @@ def chatgpt(self,args:str,mode:str=False):
             except Exception as e:
                 return e
         
-BadAPI.chatgpt=types.MethodType(chatgpt, BadAPI, None)
+BadAPI.chatgpt=chatgpt
